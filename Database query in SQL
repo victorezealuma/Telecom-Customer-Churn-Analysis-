@@ -1,5 +1,7 @@
 /*Churn category*/
 
+
+
 SELECT *
 
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
