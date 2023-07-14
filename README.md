@@ -4,4 +4,7 @@ The objective of this data analysis portfolio project explores factors behind cu
 
 # Customer Database 
 This is a comprehensive customer churn dataset, containing a single data table with over 1000 records of valuable customer data. 
-With this dataset, analysis of various attributes was made and indicators to predict and mitigate customer churn, ultimately optimizing their customer retention efforts.
+
+
+
+# Data Analysis 
