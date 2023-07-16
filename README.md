@@ -15,8 +15,8 @@ This is a comprehensive customer churn dataset, containing a single data table w
 
 
 ## Business Questions
-The following questions were raised by stakeholders which the analysis carried above provided solutions/insights 
-1. What is the overall churn rate for our business?
+Stakeholders raised questions and our analysis provided powerful insights and solutions to the following which include:
+1. What is the overall churn rate for the business?
 2. What were the main factors contributing to customer churn?
 3. Are there specific customer segments with higher churn rate?
 4. How does customer satisfaction impact churn?
