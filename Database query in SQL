@@ -1,327 +1,164 @@
 /*Churn category*/
 
-
-
 SELECT *
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 --WHERE [Contract Type] = 'Month-to-month'
-
 --AND Churn = 'Yes'
 
-
-
 SELECT *
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'Month-to-month'
-
 AND Churn = 'No'
 
-
-
 SELECT *
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'One Year'
-
 AND Churn = 'Yes'
 
-
-
 SELECT *
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'One Year'
-
 AND Churn = 'No'
 
-
-
 SELECT *
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'Two Year'
-
 AND Churn = 'Yes'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'Two Year'
-
 AND Churn = 'Yes'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'One Year'
-
 AND Churn = 'Yes'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'Month-to-month'
-
 AND Churn = 'Yes'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Contract Type] = 'Month-to-month'
-
 AND Churn = 'No'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Payment Method] = 'Electronic Check'
-
 AND Churn = 'No'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Payment Method] = 'Bank transfer (automatic)'
-
 AND Churn = 'Yes'
-
-
-
-
-
 
 
 
 
 /*Customer Support Engagement*/
 
-
-
 SELECT Customer_ID, [Tech Support],(Churn) 
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tech Support] = 'Yes'
-
 AND Churn = 'Yes'
-
-
-
 
 
 SELECT COUNT (Churn) AS Total_Churn_Receieved_tech_support
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tech Support] = 'Yes'
-
 AND Churn = 'No'
 
-
-
 SELECT COUNT (Churn) AS Total_Churn_No_tech_support
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tech Support] = 'No'
-
 AND Churn = 'Yes'
-
-
 
 /*CHURN BY PROVIDERS*/
 
-
-
 SELECT COUNT(Churn) AS Fiber_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE Churn = 'Yes'
-
 AND [Internet Service] = 'Fiber optic'
 
-
-
 SELECT COUNT(Churn) AS DSL_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE Churn = 'Yes'
-
 AND [Internet Service] = 'DSL'
 
-
-
 SELECT COUNT(Churn) AS Unknown_Providers
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE Churn = 'Yes'
-
 AND [Internet Service] = 'No'
-
-
-
 
 
 /*CHURN BY CUSTOMER DEMOGRAPHIC*/
 
-
-
 SELECT COUNT (Churn) AS Churn_Rate_by_Gender
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE Churn = 'Yes'
-
 AND Gender = 'Male'
 
-
-
 SELECT COUNT (Churn) AS Churn_Rate_by_Gender
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE Churn = 'Yes'
-
 AND Gender = 'Female'
 
-
-
 /*CHURN RATE BY TENURE*/
-
 SELECT [Customer_ID], [Tenure(In months)], [Churn]
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
-
 
 SELECT COUNT ([Churn]) AS Early_stage_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tenure(In Months)] > 0
-
 AND [Tenure(In Months)] < 36
-
 AND Churn = 'Yes'
-
-
 
 SELECT COUNT ([Churn]) AS Mid_Level_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tenure(In Months)] > 36
-
 AND [Tenure(In Months)] < 120
-
 AND Churn = 'Yes'
-
-
 
 SELECT COUNT ([Churn]) AS Late_stage_Churn
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Tenure(In Months)] > 120
-
 AND Churn = 'Yes'
-
-
-
 
 
 /*Revenue of Internet Service*/
 
-
-
 SELECT [Internet Service], [Tenure(In Months)], [Total Charges(USD)]
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'Fiber optic'
 
-
-
 SELECT SUM ([Total Charges(USD)]) AS Total_Revenure_FO
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'Fiber optic'
 
-
-
 SELECT SUM ([Total Charges(USD)]) AS Total_Revenure_FO
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'DSL'
 
-
-
 SELECT SUM ([Total Charges(USD)]) AS Total_Revenure_Others
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'No'
-
-
-
-
-
 
 
 
 
 /*Average Monthly Cost by internet Service*/
 
-
-
 SELECT AVG ([Monthly Charges(USD)]) AS DSL_AVG_Monthly_Cost
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'DSL'
 
-
-
 SELECT AVG ([Monthly Charges(USD)]) AS Fiber_optic_AVG_Monthly_Cost
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'Fiber optic'
 
-
-
 SELECT COUNT ([Internet Service]) AS Number_of_DSL_users
-
 FROM [Customer Churn Data]..['WA_Fn-UseC_-Telco-Customer-Chur$']
-
 WHERE [Internet Service] = 'DSL'
