@@ -20,3 +20,5 @@ Stakeholders raised questions and our analysis provided powerful insights and so
 2. What were the main factors contributing to customer churn?
 3. How does customer satisfaction impact churn?
 5. What are the most effective retention strategies for reducing churn? 
+
+## Recommendations 
