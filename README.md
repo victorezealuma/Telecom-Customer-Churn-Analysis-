@@ -17,9 +17,11 @@ This is a comprehensive customer churn dataset, containing a single data table w
 ## Business Questions
 Stakeholders raised questions and our analysis provided powerful insights and solutions. These include:
 1. What is the overall churn rate for the business?
+Based on the overall analysis, we realized 26% of customer were churned. 
 2. What were the main factors contributing to customer churn?
-3. How does customer satisfaction impact churn?
- 
+Main factors contributing to churn are poor technical support, payment method issues, Internet service and contract type.
+4. How does customer satisfaction impact churn?
+Customer satisfaction was negatively impacted majorly as a result poor technical support and potential issue with current payments method.
 
 ## Recommendations and retention strategies 
 
