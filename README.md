@@ -19,6 +19,16 @@ Stakeholders raised questions and our analysis provided powerful insights and so
 1. What is the overall churn rate for the business?
 2. What were the main factors contributing to customer churn?
 3. How does customer satisfaction impact churn?
-5. What are the most effective retention strategies for reducing churn? 
+ 
 
-## Recommendations 
+## Recommendations and retention strategies 
+
+The suggested retention strategy and recommendation for reducing customer attrition include:
+
+Gathering and using customer feedback to provide solution and make the customer experience better.
+
+Fixing problems found in customer data analysis, like providing non-stop tech support and quickly solving payment issues for customers.
+
+Providing personalized offers, discounts, or bundles to loyal customers or those at risk of churning.
+
+Running targeted retention campaigns such as win-back offers for lapsed customers.
