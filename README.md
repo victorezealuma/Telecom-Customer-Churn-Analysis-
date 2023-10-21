@@ -25,10 +25,10 @@ Stakeholders raised questions and our analysis provided powerful insights and so
 
 The suggested retention strategy and recommendation for reducing customer attrition include:
 
-Gathering and using customer feedback to provide solution and make the customer experience better.
+1. Gathering and using customer feedback to provide solution and make the customer experience better.
 
-Fixing problems found in customer data analysis, like providing non-stop tech support and quickly solving payment issues for customers.
+2. Fixing problems found in customer data analysis, like providing non-stop tech support and quickly solving payment issues for customers.
 
-Providing personalized offers, discounts, or bundles to loyal customers or those at risk of churning.
+3. Providing personalized offers, discounts, or bundles to loyal customers or those at risk of churning.
 
-Running targeted retention campaigns such as win-back offers for lapsed customers.
+4. Running targeted retention campaigns such as win-back offers for lapsed customers.
